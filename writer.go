@@ -8,7 +8,11 @@ import (
 )
 
 func main() {
-	book := &sw_proto.AddressBook{}
+	book := &sw_proto.AddressBook{
+		People: []*sw_proto.Person{
+			{Id: 1, Email: "aa@bb.com"},
+		},
+	}
 	// ...
 
 	// Write the new address book back to disk.
